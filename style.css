@@ -202,6 +202,28 @@
             color: var(--text);
         }
 
+        .social-link {
+            position: relative;
+        }
+
+        .qr-popup {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--card);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-out);
+            z-index: 10;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-link:hover .qr-popup {
+            display: block;
+        }
+
         .theme-toggle {
             position: fixed; top: 24px; right: 24px;
             width: 60px; height: 30px;
