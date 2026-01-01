@@ -125,6 +125,11 @@
             box-shadow: var(--shadow-out); transition: var(--transition);
             opacity: 0; transform: translateX(30px);
         }
+        aside .widget h4 {
+            margin-bottom: 16px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
         aside .widget.visible {
             opacity: 1; transform: translateX(0);
             animation: slideUp 0.8s ease-out forwards;
