@@ -29,3 +29,17 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+function toggleTheme() {
+    document.body.classList.toggle('dark');
+    const slider = document.getElementById('slider');
+    slider.innerHTML = document.body.classList.contains('dark') ? '🌙' : '☀️';
+}
+
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 500);
+});
